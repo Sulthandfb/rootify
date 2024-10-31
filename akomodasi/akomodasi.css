@@ -85,11 +85,53 @@ body {
   display: none;
 }
 
+.secondary-navbar {
+  background-color: white;
+  padding: 0.5rem 0;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.secondary-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.secondary-nav-link {
+  color: #666;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.secondary-nav-link:hover {
+  color: #000;
+}
+
+.secondary-nav-link.active {
+  color: #000;
+}
+
+.secondary-nav-link.active::after {
+  display: none;
+}
+
 .hero {
-  height: 100vh;
-  background: url('akomodasibg.jpg') no-repeat center center;
+  height: 400px;
+  background: url('hotelbg.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
 }
+
