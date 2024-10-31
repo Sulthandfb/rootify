@@ -38,7 +38,7 @@
         <div class="nav-container">
             <ul class="secondary-nav-links">
                 <li><a href="#" class="secondary-nav-link active">Home</a></li>
-                <li><a href="#" class="secondary-nav-link">Akomodasi</a></li>
+                <li><a href="/akomodasi/akomodasi.html" class="secondary-nav-link">Akomodasi</a></li>
                 <li><a href="#" class="secondary-nav-link">Filter</a></li>
                 <li><a href="#" class="secondary-nav-link">Makan</a></li>
                 <li><a href="#" class="secondary-nav-link">Harga</a></li>
@@ -47,7 +47,33 @@
     </nav>
 
     <div class="hero">
-        <h1>Grow Your Story</h1>
+        <div class="hero-content">
+            <h1>Grow Your Story</h1>
+            <div class="search-container">
+                <form class="search-form">
+                    <div class="search-input">
+                        <i class="fas fa-money-bill"></i>
+                        <input type="number" placeholder="Budget (Rp)">
+                    </div>
+                    <div class="search-input">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <select>
+                            <option value="">Pilih Kabupaten</option>
+                            <option value="sleman">Sleman</option>
+                            <option value="bantul">Bantul</option>
+                            <option value="kulonprogo">Kulon Progo</option>
+                            <option value="gunungkidul">Gunung Kidul</option>
+                            <option value="jogja">Yogyakarta</option>
+                        </select>
+                    </div>
+                    <div class="search-input">
+                        <i class="fas fa-users"></i>
+                        <input type="number" placeholder="Jumlah Orang" min="1">
+                    </div>
+                    <button type="submit" class="search-button">Cari</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="main-container">
@@ -86,28 +112,77 @@
 
     <div class="main-container-2">
         <h2>Pilih Paket Perjalananmu Sekarang!</h2>
-        <div class="trip-card">
-            <img src="logo1.png" alt="Paket Wisata" class="trip-image">
-            <div class="trip-details">
-                <div class="trip-features">
-                    <div class="feature">
-                        <i class="fas fa-clock"></i>
-                        <p>1 Hari</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-map-marker"></i>
-                        <p>3 Tempat</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-utensils"></i>
-                        <p>2x Makan</p>
+        <div class="trip-cards-container">
+            <div class="trip-card">
+                <img src="logoaja.png" alt="Paket Wisata" class="trip-image">
+                <div class="trip-details">
+                    <div class="trip-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <p>1 Hari</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marker"></i>
+                            <p>3 Tempat</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <p>2x Makan</p>
+                        </div>
                     </div>
                 </div>
+                <div class="price-booking">
+                    <div class="price">Rp 500.000</div>
+                    <button class="book-button">Pesan</button>
+                </div>
             </div>
-            <div class="price-booking">
-                <div class="price">Rp 500.000</div>
-                <button class="book-button">Pesan</button>
+            <div class="trip-card">
+                <img src="logoaja.png" alt="Paket Wisata" class="trip-image">
+                <div class="trip-details">
+                    <div class="trip-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <p>1 Hari</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marker"></i>
+                            <p>3 Tempat</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <p>2x Makan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-booking">
+                    <div class="price">Rp 500.000</div>
+                    <button class="book-button">Pesan</button>
+                </div>
             </div>
+            <div class="trip-card">
+                <img src="logoaja.png" alt="Paket Wisata" class="trip-image">
+                <div class="trip-details">
+                    <div class="trip-features">
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <p>1 Hari</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marker"></i>
+                            <p>3 Tempat</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <p>2x Makan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-booking">
+                    <div class="price">Rp 500.000</div>
+                    <button class="book-button">Pesan</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
