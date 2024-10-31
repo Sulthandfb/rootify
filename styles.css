@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #3CB371;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+.brand-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-buttons {
+  margin-left: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 0.5rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.hero {
+  height: 100vh;
+  background: url('bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.main-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.destinations-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.destination-card {
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.destination-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.caption {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.destination-card.active {
+  opacity: 1;
+  z-index: 3;
+}
+
+.destination-card.active .destination-img {
+  width: 300px;
+  height: 300px;
+}
+
+.destination-card.active .caption {
+  opacity: 1;
+}
+
+.destination-card.semi-active {
+  opacity: 0. 7;
+  z-index: 2;
+}
+
+.destination-card.semi-active .destination-img {
+  width: 250px;
+  height: 250px;
+}
+
+.destination-card.quarter-active {
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.destination-card.quarter-active .destination-img {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #3CB371;
+      padding: 1rem;
+  }
+
+  .nav-menu.active {
+      display: block;
+  }
+
+  .nav-links {
+      flex-direction: column;
+  }
+
+  .nav-toggle {
+      display: block;
+  }
+
+  .destination-img {
+      width: 150px;
+      height: 150px;
+  }
+
+  .destination-card.active .destination-img {
+      width: 250px;
+      height: 250px;
+  }
+
+  .destination-card.semi-active .destination-img {
+      width: 200px;
+      height: 200px;
+  }
+
+  .destination-card.quarter-active .destination-img {
+      width: 150px;
+      height: 150px;
+  }
+}
+
+.main-container-2 {
+      text-align: center;
+}
+
+.trip-card {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 20px;
+  background: white;
+}
+
+.trip-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-details {
+  padding: 15px;
+}
+
+.trip-features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.feature {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.price-booking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #f8f8f8;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.book-button {
+  background: #4CAF50;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.book-button:hover {
+  background: #45a049;
+}
