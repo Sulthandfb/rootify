@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,42 +34,60 @@
         </div>
     </nav>
     <nav class="secondary-navbar">
-      <div class="nav-container">
-          <ul class="secondary-nav-links">
-              <li><a href="/homepage/yusuf.html" class="secondary-nav-link active">Home</a></li>
-              <li><a href="/akomodasi/akomodasi.html" class="secondary-nav-link">Akomodasi</a></li>
-              <li><a href="#" class="secondary-nav-link">Filter</a></li>
-              <li><a href="#" class="secondary-nav-link">Makan</a></li>
-              <li><a href="#" class="secondary-nav-link">Harga</a></li>
-          </ul>
+        <div class="nav-container">
+            <ul class="secondary-nav-links">
+                <li><a href="/homepage/yusuf.html" class="secondary-nav-link active">Home</a></li>
+                <li><a href="/akomodasi/akomodasi.html" class="secondary-nav-link">Akomodasi</a></li>
+                <li><a href="#" class="secondary-nav-link">Filter</a></li>
+                <li><a href="#" class="secondary-nav-link">Makan</a></li>
+                <li><a href="#" class="secondary-nav-link">Harga</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Search Your Hotel</h1>
+          <div class="search-container">
+            <div class="search-input">
+              <input type="text" placeholder="Mau nginep di mana?">
+            </div>
+            <div class="date-input">
+              <input type="text" placeholder="Check-in - Check-out">
+            </div>
+            <div class="guests-input">
+              <input type="text" placeholder="2 Tamu">
+            </div>
+            <button class="search-button">Ayo Cari</button>
+          </div>
+        </div>
       </div>
-  </nav>
-  <main>
-    <div class="main-container">
-      <section class="hero">
-        <h1>Search your hotel</h1>
-        <form>
-          <div class="input-group">
-            <label for="location">Location:</label>
-            <input type="text" id="location" placeholder="Where to go">
-          </div>
-         
-          <div class="input-group">
-            <label for="check-in">Check in:</label>
-            <input type="date" id="check-in">
-          </div>
-          
-          <div class="input-group">
-            <label for="guest">Guest:</label>
-            <input type="number" id="guest" placeholder="Add guest">
-          </div>
-         
-          <button type="submit">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </button>
-        </form>
-      </section>
-      <section class="packages">
+            </section>
+            <section class="packages">
+                <h2>Available Packages</h2>
+                <div class="package-list">
+                    <!-- Example of a package item -->
+                    <div class="package-item">
+                        <h3>Hotel Name 1</h3>
+                        <p>Description of Hotel 1.</p>
+                        <p>Price: $100/night</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                    <div class="package-item">
+                        <h3>Hotel Name 2</h3>
+                        <p>Description of Hotel 2.</p>
+                        <p>Price: $150/night</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                    <!-- Add more packages as needed -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2023 Rootify. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
