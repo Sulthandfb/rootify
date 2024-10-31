@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-  background-color: #3CB371;
+  background-color: white;
   padding: 1rem;
   position: fixed;
   width: 100%;
@@ -86,12 +86,17 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  height: 400px;
   background: url('bg.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
 }
 
 .hero h1 {
@@ -285,4 +290,52 @@ body {
 
 .book-button:hover {
   background: #45a049;
+}
+
+.secondary-navbar {
+    background-color: white;
+    padding: 0.5rem 0;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.secondary-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.secondary-nav-link {
+    color: #666;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.secondary-nav-link:hover {
+    color: #000;
+}
+
+.secondary-nav-link.active {
+    color: #000;
+}
+
+.secondary-nav-link.active::after {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .secondary-nav-links {
+        gap: 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .secondary-nav-link {
+        white-space: nowrap;
+    }
 }
