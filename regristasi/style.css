@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f0f2f5;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 200%;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    transition: transform 0.8s ease-in-out;
+}
+
+.container.register-mode {
+    transform: translateX(-50%);
+}
+
+.form-container {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.login-container {
+    left: 0;
+}
+
+.register-container {
+    left: 50%;
+}
+
+.image-section {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-section {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    transition: all 0.8s ease-in-out;
+}
+
+.register-container .image-section {
+    order: 2;
+}
+
+.register-container .form-section {
+    order: 1;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 0;
+}
+
+.form h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.inputBox input:focus {
+    border-color: #4ecdc4;
+    box-shadow: 0 0 10px rgba(78, 205, 196, 0.1);
+}
+
+.submit-btn {
+    width: 150px;
+    padding: 15px;
+    background: #4ecdc4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #3dbdb4;
+    transform: translateY(-2px);
+}
+
+.toggle {
+    margin-top: 20px;
+    color: #666;
+    text-align: center;
+}
+
+.toggle a {
+    color: #4ecdc4;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.toggle a:hover {
+    color: #3dbdb4;
+}
+
+.social-login {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.success-message {
+    display: none;
+    color: #4ecdc4;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+@media (max-width: 768px) {
+    .image-section {
+        display: none;
+    }
+    .form-section {
+        width: 100%;
+    }
+}
