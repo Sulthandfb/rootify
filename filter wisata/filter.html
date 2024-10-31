@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Wisata Yogyakarta</title>
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rekomendasi Wisata Yogyakarta</h1>
+        <form id="wisataForm" method="POST">
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div class="step-indicator">
+                    <span class="step-bullet active" data-step="1">1</span>
+                    <span class="step-bullet" data-step="2">2</span>
+                    <span class="step-bullet" data-step="3">3</span>
+                </div>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="step-content active" id="step1">
+                <h2>Langkah 1: Durasi Perjalanan</h2>
+                <div class="form-group">
+                    <label for="tanggal_mulai">Tanggal Mulai:</label>
+                    <input type="date" id="tanggal_mulai" name="tanggal_mulai" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="jumlah_hari">Jumlah Hari:</label>
+                    <input type="number" id="jumlah_hari" name="jumlah_hari" min="1" max="14" required>
+                </div>
+                
+                <div class="button-group">
+                    <button type="button" class="next-btn" onclick="nextStep(1)">Selanjutnya</button>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-content" id="step2">
+                <h2>Langkah 2: Tipe Perjalanan dan Budget</h2>
+                <div class="form-group">
+                    <label for="tipe_perjalanan">Tipe Perjalanan:</label>
+                    <select id="tipe_perjalanan" name="tipe_perjalanan" required>
+                        <option value="">Pilih tipe perjalanan</option>
+                        <option value="sendiri">Sendiri</option>
+                        <option value="pasangan">Dengan Pasangan</option>
+                        <option value="keluarga">Dengan Keluarga</option>
+                        <option value="group">Dengan Kelompok</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Range Budget:</label>
+                    <select id="budget" name="budget" required>
+                        <option value="">Pilih range budget</option>
+                        <option value="100000-500000">Rp 100.000 - Rp 500.000</option>
+                        <option value="500000-1000000">Rp 500.000 - Rp 1.000.000</option>
+                        <option value="1000000-2000000">Rp 1.000.000 - Rp 2.000.000</option>
+                        <option value="2000000+">Lebih dari Rp 2.000.000</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="prev-btn" onclick="prevStep(2)">Kembali</button>
+                    <button type="button" class="next-btn" onclick="nextStep(2)">Selanjutnya</button>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-content" id="step3">
+                <h2>Langkah 3: Kategori Wisata</h2>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="alam" name="kategori[]" value="alam">
+                        <label for="alam">Wisata Alam</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="budaya" name="kategori[]" value="budaya">
+                        <label for="budaya">Wisata Budaya</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="kuliner" name="kategori[]" value="kuliner">
+                        <label for="kuliner">Wisata Kuliner</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="sejarah" name="kategori[]" value="sejarah">
+                        <label for="sejarah">Wisata Sejarah</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="edukasi" name="kategori[]" value="edukasi">
+                        <label for="edukasi">Wisata Edukasi</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="religi" name="kategori[]" value="religi">
+                        <label for="religi">Wisata Religi</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="belanja" name="kategori[]" value="belanja">
+                        <label for="belanja">Wisata Belanja</label>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="prev-btn" onclick="prevStep(3)">Kembali</button>
+                    <button type="submit" class="submit-btn">Cari Rekomendasi</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="filter.js"></script>
+</body>
+</html>
