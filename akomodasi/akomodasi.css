@@ -11,76 +11,85 @@ body {
 }
 
 .navbar {
-    background-color: #FF8343;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
+  background-color: #EC8305;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
-  .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
   
-  .nav-brand {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
   
-  .logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 0.5rem;
-  }
+.brand-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+}
   
-  .brand-text {
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #000;
-  }
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
   
-  .nav-menu {
-    display: flex;
-    align-items: center;
-  }
+.nav-links {
+  display: flex;
+  list-style: none;
+}
   
-  .nav-links {
-    display: flex;
-    list-style: none;
-  }
+.nav-links li a {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
   
-  .nav-links li a {
-    color: #000;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-  }
+.nav-buttons {
+  margin-left: 1rem;
+}
   
-  .nav-buttons {
-    margin-left: 1rem;
-  }
+.btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 0.5rem;
+  transition: all 0.3s;
+}
   
-  .btn {
-    padding: 0.5rem 1rem;
-    border: 1px solid #000;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #000;
-    margin-left: 0.5rem;
-    transition: all 0.3s;
-  }
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
   
-  .btn:hover {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .nav-toggle {
-    display: none;
-  }
+.nav-toggle {
+  display: none;
+}
+
+.hero {
+  height: 100vh;
+  background: url('akomodasibg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
