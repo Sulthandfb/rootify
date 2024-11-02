@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #EC8305;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+  
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+  
+.brand-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+}
+  
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+  
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+  
+.nav-links li a {
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+  
+.nav-buttons {
+  margin-left: 1rem;
+}
+  
+.btnnav {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 0.5rem;
+  transition: all 0.3s;
+}
+  
+.btnnav:hover {
+  background-color: #000;
+  color: #fff;
+}
+  
+.nav-toggle {
+  display: none;
+}
+
+.secondary-navbar {
+  background-color: white;
+  padding: 0.5rem 0;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.secondary-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.secondary-nav-link {
+  color: #666;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.secondary-nav-link:hover {
+  color: #000;
+}
+
+.secondary-nav-link.active {
+  color: #000;
+}
+
+.secondary-nav-link.active::after {
+  display: none;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .room-info {
+    width: 400px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .room-info h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .room-info img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .room-details {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .detail-room-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .room-details-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .detail-info {
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .detail-item i {
+    font-size: 18px;
+    color: #ffc107;
+  }
+  
+  .detail-item span {
+    font-weight: bold;
+  }
+  
