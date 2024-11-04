@@ -116,4 +116,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     updateCardPositions();
+
+    // Menambahkan event listener untuk scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        const brandText = document.querySelector('.brand-text');
+
+        if (window.scrollY > 0) {
+            navbar.classList.add('scrolled');
+            brandText.style.color = '#000'; // Ubah warna teks menjadi hitam
+        } else {
+            navbar.classList.remove('scrolled');
+            brandText.style.color = '#fff'; // Ubah warna teks menjadi putih
+        }
+    });
 });
